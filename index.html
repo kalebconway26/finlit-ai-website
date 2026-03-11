@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0045)file://wsl$/Ubuntu/home/kaleb/index.html#hero -->
+<!-- saved from url=(0048)file://wsl$/Ubuntu/home/kaleb/index.html#pricing -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -429,7 +429,7 @@ a{color:inherit;text-decoration:none}
 <div class="accent-line"></div>
 
 <!-- ═══ NAV ═══ -->
-<nav class="nav" id="nav">
+<nav class="nav scrolled" id="nav">
   <div class="nav-inner">
     <a href="file://wsl$/Ubuntu/home/kaleb/index.html#hero" class="nav-logo">
       <svg viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="6" fill="#0A2540"></rect><path d="M7.5 7.5h4.5v1.5H9v2.8h2.8v1.5H9v5.2H7.5V7.5zm6 0H18v1.5h-3v2.8h2.8v1.5H15v5.2h-1.5V7.5z" fill="#059669"></path></svg>
@@ -444,7 +444,7 @@ a{color:inherit;text-decoration:none}
       <a href="file://wsl$/Ubuntu/home/kaleb/index.html#tools" onclick="navClick(this)" class="">Dashboard</a>
       <a href="file://wsl$/Ubuntu/home/kaleb/index.html#market" onclick="navClick(this)" class="">Market</a>
       <a href="file://wsl$/Ubuntu/home/kaleb/index.html#learn" onclick="navClick(this)" class="">Learn</a>
-      <a href="file://wsl$/Ubuntu/home/kaleb/index.html#pricing" onclick="navClick(this)" class="">Pricing</a>
+      <a href="file://wsl$/Ubuntu/home/kaleb/index.html#pricing" onclick="navClick(this)" class="active">Pricing</a>
       <a href="file://wsl$/Ubuntu/home/kaleb/index.html#" class="nav-portal" onclick="event.preventDefault();openModal()">Portal</a>
     </div>
   </div>
@@ -584,14 +584,14 @@ a{color:inherit;text-decoration:none}
       <p class="section-desc">Click any tool below to explore a live demo of the platform.</p>
     </div>
     <div class="tools-nav rv vis" id="tools-nav">
-      <button class="tools-tab" onclick="switchTool(&#39;credit&#39;)">Micro-Credit</button>
+      <button class="tools-tab active" onclick="switchTool(&#39;credit&#39;)">Micro-Credit</button>
       <button class="tools-tab" onclick="switchTool(&#39;subs&#39;)">Subscriptions</button>
       <button class="tools-tab" onclick="switchTool(&#39;chat&#39;)">AI Coach</button>
-      <button class="tools-tab active" onclick="switchTool(&#39;calc&#39;)">Health Score</button>
+      <button class="tools-tab" onclick="switchTool(&#39;calc&#39;)">Health Score</button>
     </div>
 
     <!-- ─ MICRO-CREDIT PANEL ─ -->
-    <div class="tool-panel" id="panel-credit">
+    <div class="tool-panel active" id="panel-credit">
       <div class="dash-card">
         <div class="dash-topbar">
           <h3><span class="live-dot"></span> Micro-Credit Dashboard</h3>
@@ -742,7 +742,7 @@ a{color:inherit;text-decoration:none}
     </div>
 
     <!-- ─ CALC PANEL ─ -->
-    <div class="tool-panel active" id="panel-calc">
+    <div class="tool-panel" id="panel-calc">
       <div class="calc-card">
         <div class="dash-topbar"><h3><span class="live-dot"></span> Financial Health Score</h3></div>
         <div class="calc-inner" id="calc-form">
@@ -1039,9 +1039,9 @@ a{color:inherit;text-decoration:none}
 <!-- ═══ CTA ═══ -->
 <section class="cta-section" id="cta">
   <div class="container">
-    <h2 class="rv vis">Take control of your <em style="color:var(--gold);font-style:italic">finances.</em></h2>
-    <p class="rv rv-d1 vis">Join thousands building better financial habits. Free forever, no credit card required.</p>
-    <button class="btn btn-green rv rv-d2 vis" style="font-size:.92rem;padding:14px 32px" onclick="openModal()">Create Free Account</button>
+    <h2 class="rv">Take control of your <em style="color:var(--gold);font-style:italic">finances.</em></h2>
+    <p class="rv rv-d1">Join thousands building better financial habits. Free forever, no credit card required.</p>
+    <button class="btn btn-green rv rv-d2" style="font-size:.92rem;padding:14px 32px" onclick="openModal()">Create Free Account</button>
   </div>
 </section>
 
